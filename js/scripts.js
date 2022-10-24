@@ -12,7 +12,13 @@ function handleSubmit(event) {
     }
   })  
 
-  console.log(filterArray)
+  filterArray.reverse();  
+  let output = filterArray.join(' ');
+  console.log(output)
+
+  let p = document.createElement('p');
+  p.append(output);
+  document.body.append(p);
 }
 
 window.addEventListener('load', function(){ 
